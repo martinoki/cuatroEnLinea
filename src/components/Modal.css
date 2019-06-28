@@ -1,0 +1,78 @@
+.modal {
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.5s;
+}
+
+.container {
+  width: 60%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  font-size: 1.5em;
+  text-align: center;
+  -webkit-animation-name: modal; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  animation-name: modal;
+  animation-duration: 3s;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  -webkit-animation-name: rotation; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rotation {
+  0% {
+    width: 100px;
+  }
+
+  50% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+
+/* Standard syntax */
+@keyframes rotation {
+  0% {
+    width: 100px;
+  }
+
+  50% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+
+
+.button{
+  width: 150px;
+  height: 50px;
+  background: green;
+  color: yellow;
+  font-size: 20px;
+  font-family: serif;
+  cursor: pointer;
+}

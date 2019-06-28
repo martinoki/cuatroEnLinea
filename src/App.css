@@ -1,0 +1,55 @@
+body {
+	background-color: rgb(15, 190, 103);
+	display: flex;
+	justify-content: center;
+}
+
+.Wrapper {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-top: 3rem;
+	height: 80vh;
+	width: 80vw;
+}
+
+.BoardGrid {
+	height: 80vh;
+	width: 80vh;
+	max-height: 80vw;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+}
+
+.SquareRow {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+}
+
+.Square {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	border-collapse: collapse;
+	border: 2px solid black;
+	box-sizing: border-box;
+}
+
+.Square div {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90%;
+	width: 90%;
+	margin: auto;
+}
+
+.Square:hover {
+	border: 3px solid black;
+	transform: scale(1.05);
+	box-shadow: 0px 9px 27px 5px rgba(71, 70, 70, 0.81);
+}
